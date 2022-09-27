@@ -226,6 +226,22 @@
 	user.nextsoundemote = world.time + 7
 	playsound(user, 'modular_splurt/sound/voice/bruh.ogg', 50, 1, -1)
 
+/datum/emote/living/thebaby
+	key = "thebaby"
+	key_third_person = "the baby"
+	message = "the baby"
+	emote_type = EMOTE_AUDIBLE
+	muzzle_ignore = FALSE
+	restraint_check = FALSE
+
+/datum/emote/living/bruh/run_emote(mob/user, params, type_override, intentional)
+	if(!(. = ..()))
+		return
+	if(user.nextsoundemote >= world.time)
+		return
+	user.nextsoundemote = world.time + 7
+	playsound(user, 'modular_splurt/sound/voice/the_baby.ogg', 50, 1, -1)
+
 /datum/emote/living/bababooey
 	key = "bababooey"
 	key_third_person = "bababooeys"

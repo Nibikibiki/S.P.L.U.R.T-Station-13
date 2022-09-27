@@ -36,12 +36,6 @@
 	allow_random = TRUE
 	soundpath = 'modular_splurt/sound/voice/caw.ogg'
 
-/datum/bark/baby
-	name = "Baby"
-	id = "baby"
-	allow_random = TRUE
-	soundpath = 'modular_splurt/sound/voice/baby.ogg'
-
 /datum/bark/bleat
 	name = "Bleat"
 	id = "bleat"
